@@ -1,0 +1,14 @@
+<div class="card">
+  
+    <div class="card-body">
+        <canvas baseChart width="400" height="320"
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          chartType="line"
+          [plugins]="lineChartPlugins">
+        </canvas>
+    </div>
+</div>
