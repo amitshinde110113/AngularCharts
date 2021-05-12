@@ -25,7 +25,6 @@ export class AppComponent implements OnInit{
  ngOnInit(){
   //  const {getData}=this.dataService;
   
-  console.log('======================>', )
 zip(
   this.dataService.getData('assets/bar.text'),
   this.dataService.getData('assets/line.text'),
@@ -36,7 +35,6 @@ zip(
   this.dataService.getData('assets/radar.text'),
   this.dataService.getData('assets/polar.text')
 ).subscribe(([bar,line,pie,dnt,scatter,bubble,radar,polar])=>{
-  console.log('bar', bar)
   this.barchartCode=bar;
   this.linechartCode=line;
   this.piechartCode=pie;
@@ -47,15 +45,9 @@ zip(
   this.polarchartCode=polar
 
 },error=>{
-  console.log('error', error)
 
 })
-  // . then(response => response. text())
-  // . then(data => {
-  // // Do something with your data.
-  // console. log(data);
-  // this.barchartCode=data;
-  // });
+  
  }
 
 }
